@@ -1,0 +1,30 @@
+<svg width="202" height="317" viewBox="0 0 202 317" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="200" height="314.115" rx="21" stroke="currentColor" stroke-width="2" />
+    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="21" y="23" width="160" height="270">
+        <rect x="21.5" y="23.5" width="159" height="269" fill="currentColor" stroke="currentColor" />
+    </mask>
+    <g mask="url(#mask0)">
+        <rect x="104" y="186" width="192" height="91" fill="currentColor" />
+        <rect x="63" y="198" width="192" height="91" fill="currentColor" />
+        <rect x="18" y="216" width="192" height="91" fill="currentColor" />
+        <path d="M-38 144L13.5 143L5 168H-38V144Z" fill="currentColor" />
+        <path d="M13.5 119H56.5V143H13.5V119Z" fill="currentColor" />
+        <path d="M48 108H85V132H48V108Z" fill="currentColor" />
+        <path d="M85 108H134V132H85V108Z" fill="currentColor" />
+        <path d="M71.5 43H114.5V67H71.5V43Z" fill="currentColor" />
+        <path d="M114.5 19H157.5V43H114.5V19Z" fill="currentColor" />
+        <path d="M154.5 1C154.5 1 180.707 1 197.5 1C197.5 10.3726 197.5 31 197.5 31H154.5V1Z" fill="currentColor" />
+        <path d="M197.5 1C215.464 1 243.5 1 243.5 1V31H197.5C197.5 31 197.5 10.3726 197.5 1Z" fill="currentColor" />
+        <rect x="68" y="168" width="22" height="13" fill="currentColor" />
+        <rect x="74" y="183" width="10" height="12" fill="currentColor" />
+        <rect x="74" y="195" width="3" height="3" fill="currentColor" />
+        <rect x="71" y="186" width="3" height="3" fill="currentColor" />
+        <rect x="69" y="188" width="3" height="3" fill="currentColor" />
+        <rect x="84" y="186" width="3" height="3" fill="currentColor" />
+        <rect x="86" y="188" width="3" height="3" fill="currentColor" />
+        <rect x="81" y="195" width="3" height="3" fill="currentColor" />
+        <rect x="77" y="181" width="4" height="2" fill="currentColor" />
+    </g>
+    <rect x="21.8966" y="23.8124" width="158.207" height="268.49" stroke="currentColor" stroke-width="2" />
+    <rect x="90.0371" y="11.974" width="21.9009" height="2.39481" fill="currentColor" />
+</svg>

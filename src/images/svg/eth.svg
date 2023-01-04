@@ -1,0 +1,17 @@
+<svg width="139" height="107" viewBox="0 0 139 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="137.372" height="91.2481" rx="4.5" stroke="currentColor" />
+    <rect x="7.87988" y="6.95734" width="123.535" height="78.3333" stroke="currentColor" />
+    <path
+        d="M87.694 92C91.2647 95.473 93.5161 99.9454 93.7865 104.857C93.8047 105.188 93.8139 105.521 93.8139 105.857L44 105.857C44 105.521 44.0092 105.188 44.0275 104.857C44.2978 99.9454 46.5492 95.473 50.12 92"
+        stroke="currentColor" stroke-linecap="square" />
+    <rect x="37" y="7" width="1" height="78" fill="currentColor" />
+    <rect x="131" y="75" width="10" height="93" transform="rotate(90 131 75)" fill="currentColor" />
+    <rect x="93" y="22" width="16" height="52" transform="rotate(90 93 22)" fill="currentColor" />
+    <rect x="128" y="42" width="4" height="52" transform="rotate(90 128 42)" fill="currentColor" />
+    <rect x="128" y="50" width="4" height="52" transform="rotate(90 128 50)" fill="currentColor" />
+    <rect x="128" y="58" width="4" height="52" transform="rotate(90 128 58)" fill="currentColor" />
+    <rect x="37" y="7" width="78" height="29" transform="rotate(90 37 7)" fill="currentColor" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M38 7H131V19H38V7ZM50 12H80V14H50V12ZM44 16C45.6569 16 47 14.6569 47 13C47 11.3431 45.6569 10 44 10C42.3431 10 41 11.3431 41 13C41 14.6569 42.3431 16 44 16Z"
+        fill="currentColor" />
+</svg>

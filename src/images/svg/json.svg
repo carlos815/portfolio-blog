@@ -1,0 +1,11 @@
+<svg width="139" height="107" viewBox="0 0 139 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="137.372" height="91.2481" rx="4.5" stroke="currentColor" />
+    <rect x="7.87985" y="6.95734" width="123.535" height="78.3333" stroke="currentColor" />
+    <rect x="33.5" y="22.5" width="71" height="55" stroke="currentColor" />
+    <rect x="89" y="70" width="11" height="5" fill="currentColor" />
+    <rect x="75.5" y="70.5" width="10" height="4" stroke="currentColor" />
+    <path d="M132 6H7V50H33V22H105V50H132V6Z" fill="currentColor" />
+    <path
+        d="M87.694 92C91.2647 95.473 93.5161 99.9454 93.7865 104.857C93.8047 105.188 93.8139 105.521 93.8139 105.857L44 105.857C44 105.521 44.0092 105.188 44.0275 104.857C44.2978 99.9454 46.5492 95.473 50.12 92"
+        stroke="currentColor" stroke-linecap="square" />
+</svg>

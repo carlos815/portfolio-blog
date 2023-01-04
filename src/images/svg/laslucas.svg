@@ -1,0 +1,16 @@
+<svg width="85" height="132" viewBox="0 0 85 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="83.3492" height="131" rx="4.5" stroke="currentColor" />
+    <rect x="9.22577" y="10.0258" width="65.8976" height="111.948" stroke="currentColor" />
+    <ellipse cx="24.2299" cy="60.2062" rx="4.83971" ry="4.76289" fill="currentColor" />
+    <ellipse cx="24.2299" cy="84.701" rx="4.83971" ry="4.76289" fill="currentColor" />
+    <ellipse cx="24.2299" cy="72.4536" rx="4.83971" ry="4.76289" fill="currentColor" />
+    <ellipse cx="24.2299" cy="96.9485" rx="4.83971" ry="4.76289" fill="currentColor" />
+    <rect x="33.218" y="58.1649" width="29.0382" height="5.4433" fill="currentColor" />
+    <rect x="33.218" y="70.4124" width="29.0382" height="5.4433" fill="currentColor" />
+    <rect x="33.218" y="82.6598" width="29.0382" height="5.4433" fill="currentColor" />
+    <rect x="33.218" y="94.9072" width="29.0382" height="5.4433" fill="currentColor" />
+    <rect x="37.5968" y="5" width="9.14516" height="1" fill="currentColor" />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M75.1935 10H9.14514V38H15V25H70V38H75.1935V10Z"
+        fill="currentColor" />
+    <rect x="15.5" y="25.5" width="54" height="21" stroke="currentColor" />
+</svg>

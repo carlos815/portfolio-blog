@@ -1,0 +1,23 @@
+<svg width="139" height="107" viewBox="0 0 139 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.5" y="0.5" width="137.372" height="91.2481" rx="4.5" stroke="currentColor" />
+    <rect x="7.87988" y="6.95734" width="123.535" height="78.3333" stroke="currentColor" />
+    <path
+        d="M87.694 92C91.2647 95.473 93.5161 99.9454 93.7865 104.857C93.8047 105.188 93.8139 105.521 93.8139 105.857L44 105.857C44 105.521 44.0092 105.188 44.0275 104.857C44.2978 99.9454 46.5492 95.473 50.12 92"
+        stroke="currentColor" stroke-linecap="square" />
+    <rect x="11" y="12" width="22" height="5" fill="currentColor" />
+    <rect x="19" y="40" width="14" height="5" fill="currentColor" />
+    <rect x="19" y="48" width="14" height="5" fill="currentColor" />
+    <rect x="19" y="56" width="14" height="5" fill="currentColor" />
+    <rect x="17" y="22" width="16" height="2" fill="currentColor" />
+    <rect x="17" y="27" width="16" height="2" fill="currentColor" />
+    <rect x="17" y="32" width="16" height="2" fill="currentColor" />
+    <rect x="11" y="32" width="2" height="2" fill="currentColor" />
+    <rect x="11" y="27" width="2" height="2" fill="currentColor" />
+    <rect x="11" y="22" width="2" height="2" fill="currentColor" />
+    <circle cx="13.5" cy="42.5" r="2.5" fill="currentColor" />
+    <circle cx="13.5" cy="50.5" r="2.5" fill="currentColor" />
+    <circle cx="13.5" cy="58.5" r="2.5" fill="currentColor" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M36 7H131V85H36V7ZM40 10H106V15H40V10ZM126 29H40V32H126V29ZM40 41H54V57H40V41ZM59 69H40V78H59V69ZM73 69H92V78H73V69ZM127 69H108V78H127V69ZM65 41H79V57H65V41ZM104 41H89V57H104V41ZM112 41H127V57H112V41ZM112.5 15C113.881 15 115 13.8807 115 12.5C115 11.1193 113.881 10 112.5 10C111.119 10 110 11.1193 110 12.5C110 13.8807 111.119 15 112.5 15ZM122 12.5C122 13.8807 120.881 15 119.5 15C118.119 15 117 13.8807 117 12.5C117 11.1193 118.119 10 119.5 10C120.881 10 122 11.1193 122 12.5ZM126.5 15C127.881 15 129 13.8807 129 12.5C129 11.1193 127.881 10 126.5 10C125.119 10 124 11.1193 124 12.5C124 13.8807 125.119 15 126.5 15Z"
+        fill="currentColor" />
+</svg>

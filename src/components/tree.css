@@ -1,0 +1,105 @@
+ul,
+ol {
+    /* margin-left: var(--spacing-0);
+    margin-right: var(--spacing-0);
+    padding: var(--spacing-0);
+    margin-bottom: var(--spacing-8);
+    list-style-position: outside;
+    list-style-image: none; */
+    /* list-style: inside; */
+}
+
+.tree {
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    text-align: left;
+    list-style-position: inside;
+    @apply text-primary text-2xl
+}
+
+.tree .first {
+    list-style-type: '┌───';
+}
+
+.tree li {
+    list-style-type: '├───';
+
+}
+
+.tree li:last-of-type {
+    list-style-type: '└───';
+}
+
+/*second level*/
+
+.tree li ul li {
+    list-style-type: '│\00a0\00a0\00a0├───';
+}
+
+.tree li ul li:last-of-type {
+    list-style-type: '│\00a0\00a0\00a0└───';
+}
+
+/* third level*/
+
+.tree li ul li ul li {
+    list-style-type: '│\00a0\00a0\00a0│\00a0\00a0\00a0├───';
+}
+
+.tree li ul li ul li:last-of-type {
+    list-style-type: '│\00a0\00a0\00a0│\00a0\00a0\00a0└───';
+}
+
+.tree li ul li:last-of-type ul li:last-of-type {
+    list-style-type: '│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└───';
+}
+
+.tree li ul li:last-of-type ul li {
+    list-style-type: '│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├───';
+}
+
+/*fourth level*/
+
+.tree li ul li ul li ul li {
+    list-style-type: '│        ├───';
+}
+
+.tree li ul li ul li ul li:last-of-type {
+    list-style-type: '│        └───';
+}
+
+/*last li*/
+
+.tree .last {
+    list-style-type: '└───';
+}
+
+/*last li - second level*/
+
+.tree .last ul li {
+    list-style-type: '\00a0\00a0\00a0\00a0├───';
+}
+
+.tree .last ul li:last-of-type {
+    list-style-type: '\00a0\00a0\00a0\00a0└───';
+}
+
+/*last li - third level*/
+
+.tree .last ul li:last-of-type ul li {
+    list-style-type: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├───';
+}
+
+.tree .last ul li:last-of-type ul li:last-of-type {
+    list-style-type: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└───';
+}
+
+/*last li -fourth level*/
+
+.tree .last ul li ul li ul li {
+    list-style-type: '        ├───';
+}
+
+.tree .last ul li ul li ul li:last-of-type {
+    list-style-type: '\00a0└───';
+}
