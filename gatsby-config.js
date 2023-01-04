@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Carlos Hernández`,
     author: {
       name: `Carlos Hernández`,
       summary: `I'm a front-end developer from Venezuela. This is my programming blog. `,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A programming blog about programming`,
+    siteUrl: `https://cccarlos.gatsbyjs.io/`,
     social: {
       twitter: `carlos_t815`,
     },

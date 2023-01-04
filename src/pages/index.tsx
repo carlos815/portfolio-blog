@@ -45,17 +45,19 @@ const BlogIndex = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
 
             return (
+                    <Link to={post.fields.slug} itemProp="url" className="no-underline group hover:bg-primary">
+              
               <li key={post.fields.slug} className="py-2">
                 <article
                   className="flex justify-between w-full md:flex-row flex-col ">
-                  <h3 className="text-base w-full md:max-w-[66%] mb-0">
-                    <Link to={post.fields.slug} itemProp="url">
+                  <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background">
                       {title}
-                    </Link>
                   </h3>
                   <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden">{post.frontmatter.date}</p>
                 </article>
+
               </li>
+                    </Link>
             )
           })}
         </ol>
@@ -71,7 +73,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo  />
 
 export const pageQuery = graphql`
   query {
