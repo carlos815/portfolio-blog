@@ -35,11 +35,11 @@ const BlogIndex = ({ data, location }) => {
 
         <p className="text-base mb-4">
           I'm a developer in Colombia. I make programming projects and then write about them. I am constantly learning things. I make music, practice chess, play videogames, write and read a lot.
-          </p>
+        </p>
 
         <a href="https://www.linkedin.com/in/carlos-hern%C3%A1ndez-5a751422a/">LinkedIn</a>
         <a href="https://twitter.com/carlos_t815" className="mb-4">Twitter</a>
-        <p className="text-base mb-4">I also use the technology of internet mail correspondence, also known as <a href="https://en.wikipedia.org/wiki/Email">electronic mail</a>, contact me at carlos.815t@gmail.com      </p>
+        <p className="text-base mb-4">I also use the technology of internet mail correspondence, also known as <a href="https://en.wikipedia.org/wiki/Email">electronic mail</a>, contact me at cccarlos@duck.com      </p>
       </Section>
     </Layout>
   )
