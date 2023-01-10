@@ -29,13 +29,10 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
 
       <Section>
-
-        <header>
-
-        </header>
+        <header />
         <div className="flex flex-col gap-8 items-center mb-8 md:flex-row ga">
           <Bio className="md:w-full" />
-          <img className="md:w-full" src={HeroImage} />
+          <img className="md:w-full" src={HeroImage} alt="vector de pc" />
         </div>
 
         <h2 className="text-2xl mb-3">Latest posts</h2>
@@ -45,8 +42,8 @@ const BlogIndex = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
 
             return (
-              <Link to={post.fields.slug} itemProp="url" className="no-underline group hover:bg-primary">
-                <li key={post.fields.slug} className="py-2">
+              <li key={post.fields.slug} className="py-2 hover:bg-primary group ">
+                <Link to={post.fields.slug} itemProp="url" className="no-underline  ">
                   <article
                     className="flex justify-between w-full md:flex-row flex-col ">
                     <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background">
@@ -54,8 +51,8 @@ const BlogIndex = ({ data, location }) => {
                     </h3>
                     <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden">{post.frontmatter.date}</p>
                   </article>
-                </li>
-              </Link>
+                </Link>
+              </li>
             )
           })}
         </ol>
