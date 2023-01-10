@@ -44,7 +44,7 @@ const Layout = ({ location, title, children, lang = "en" }) => {
             </div>
           </NavLink>
           <NavLink to={english ? "/es" : "/"}>
-            {english ? "Español" : "English"}
+            {english ? "Español 🇻🇪" : "English 🇺🇸"}
           </NavLink>
         </ul>
       </nav>
