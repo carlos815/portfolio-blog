@@ -13,7 +13,7 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
-    <Layout location={location} title={siteTitle} lang="en">
+    <Layout location={location} title={siteTitle} >
       <Section>
         <article
           className="blog-post"
