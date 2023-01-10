@@ -26,7 +26,7 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle} lang="es">
+    <Layout location={location} title={siteTitle}>
 
       <Section>
 

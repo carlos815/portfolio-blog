@@ -9,8 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, lang, title, children }) => {
-  const { site } = useStaticQuery(
+const Seo = ({ description, lang, title, children, location }) => {
+  const { site, markdownRemark } = useStaticQuery(
     graphql`
       query {
         site {
@@ -28,7 +28,6 @@ const Seo = ({ description, lang, title, children }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-
   return (
     <>
       <title>{title ? `${title} | ${defaultTitle}` : defaultTitle}</title>
