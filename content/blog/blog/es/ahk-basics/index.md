@@ -1,6 +1,6 @@
 ---
 title: Utiliza macros en Windows como un hacker
-date: "2023-01-09T22:12:03.284Z"
+date: "2023-01-10T20:12:03.284Z"
 description: "Con AutoHotkey hacer todo tipo de macros raras para controlar tu PC es super fácil"
 ---
 ![The Hackerman](./hackerman2.jpeg)
