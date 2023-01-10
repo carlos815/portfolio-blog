@@ -9,7 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Bio = ({ className }) => {
+const Bio = ({ className, lang = "en" }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -30,6 +30,10 @@ const Bio = ({ className }) => {
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
+  const title = lang == "en" ? "Hi! I'm Carlos Hernández" : "¡Hola! Mi nombre es Carlos Hernández";
+  const subtitle = lang == "en" ? "This is my blog 🖥️" : "Este es mi blog 🖥️";
+  const description = lang == "en" ? "I'm a developer in Colombia. I make programming projects and then write about them. I am constantly learning things. I make music, practice chess, play videogames, write and read a lot." : "Soy un desarrollador en Colombia. Hago proyectos de programación y luego escribo sobre ellos. Me la paso aprendiendo cosas. Hago música, practico ajedrez, juego videojuegos, escribo y leo a cada rato.";
+
   return (
     <div className={className}>
       {/* <StaticImage
@@ -49,9 +53,9 @@ const Bio = ({ className }) => {
       )}
       {author?.summary && <p>{author?.summary}</p>} */}
 
-      <h1 className="md:text-6xl mb-4">Hi! I'm Carlos Hernández</h1>
-      <p className="font-bold text-secondary text-lg md:text-xl mb-4">This is my blog 🖥️</p>
-      <p className="text-base">I'm a developer in Colombia. I make programming projects and then write about them. I am constantly learning things. I make music, practice chess, play videogames, write and read a lot.</p>
+      <h1 className="md:text-6xl mb-4">{title}</h1>
+      <p className="font-bold text-secondary text-lg md:text-xl mb-4">{subtitle}</p>
+      <p className="text-base">{description}</p>
     </div>
   )
 }
