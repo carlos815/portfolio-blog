@@ -1,7 +1,7 @@
 ---
-title: "Making data persistent across reloads in React with the Context API"
+title: "Having persistent data in React with the Context API"
 date: "2023-01-19"
-description: "Mak"
+description: "How do you keep state across browser reloads?"
 ---
 
 In this quick tutorial I will teach you how to make the data in the Context API persistent across reloads using the browser's built tools.
