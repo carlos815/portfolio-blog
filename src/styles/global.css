@@ -34,7 +34,7 @@
     --fontFamily-sans: monospace, Consolas, system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --fontFamily-serif: monospace, Consolas, "Merriweather", "Georgia", Cambria, "Times New Roman",
+    --fontFamily-serif:  "Merriweather", "Georgia", Cambria, "Times New Roman",
         Times, serif;
     --font-body: var(--fontFamily-serif);
     --font-heading: var(--fontFamily-sans);
@@ -192,7 +192,7 @@ h6>a {
 /* Prose */
 
 p {
-    @apply text-2xl text-primary
+    @apply text-2xl text-primary font-sans
 }
 
 ul {
@@ -220,6 +220,7 @@ ul li,
 ol li {
     /* padding-left: var(--spacing-0);
     margin-bottom: calc(var(--spacing-8) / 2); */
+    @apply font-sans
 }
 
 li>p {
@@ -354,7 +355,7 @@ a:focus {
 }
 
 .blog-post p {
-    @apply text-base mb-4
+    @apply text-lg mb-4
 }
 
 .blog-post p img {
@@ -381,4 +382,8 @@ a:focus {
 
 ul {
     @apply mb-4
+}
+
+.blog-post .gatsby-highlight {
+    margin: 1.5rem 0;
 }
