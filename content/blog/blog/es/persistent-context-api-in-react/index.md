@@ -18,7 +18,7 @@ Almacenaremos nuestros datos en la memoria del navegador con la ayuda de la [API
 
 `localStorage` por sí solo es bastante básico, sólo recibe textos, así que cuando estás leyendo o escribiendo información de ahí que ir convirtiendo los datos.
 
-Este hook personalizado de [sanderdebr](https://dev.to/sanderdebr/building-a-custom-react-localstorage-hook-2bja) que conseguí nos ayudará con eso, utiliza ```JSON.stringify`` y ``JSON.parse`` para leer y escribir nuestros datos y puede ser utilizado como cualquier otro hook dentro de nuestra aplicación:
+Este hook personalizado de [sanderdebr](https://dev.to/sanderdebr/building-a-custom-react-localstorage-hook-2bja) que conseguí nos ayudará con eso, utiliza ``JSON.stringify`` y ``JSON.parse`` para leer y escribir nuestros datos y puede ser utilizado como cualquier otro hook dentro de nuestra aplicación:
 
 ```ts
 //https://dev.to/sanderdebr/building-a-custom-react-localstorage-hook-2bja
