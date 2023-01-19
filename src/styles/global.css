@@ -118,6 +118,10 @@ body {
     /* padding: revert; */
 }
 
+.blog-post p .gatsby-resp-image-wrapper {
+    @apply overflow-hidden rounded-lg border-primary border-2 w-full m-0
+}
+
 footer {
     padding: var(--spacing-6) var(--spacing-0);
 }
