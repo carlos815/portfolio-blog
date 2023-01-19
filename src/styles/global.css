@@ -386,4 +386,9 @@ ul {
 
 .blog-post .gatsby-highlight {
     margin: 1.5rem 0;
+ 
+  
+}
+.blog-post .gatsby-highlight pre { 
+        border-radius: 8px;
 }
