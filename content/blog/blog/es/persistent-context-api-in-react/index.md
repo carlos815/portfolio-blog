@@ -1,5 +1,5 @@
 ---
-title: "¿Cómo tener datos persistentes en React usando Context?"
+title: "La mejor forma de guardar datos en el navegador con React"
 date: "2023-01-19"
 description: "Un mini tutorial de React sobre cómo combinar la API de Context y LocalStorage"
 ---

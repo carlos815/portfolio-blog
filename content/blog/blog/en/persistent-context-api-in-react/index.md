@@ -1,5 +1,5 @@
 ---
-title: "Having persistent data in React with the Context API"
+title: "The best way to store data in the browser with React"
 date: "2023-01-19"
 description: "How do you keep state across browser reloads?"
 ---
