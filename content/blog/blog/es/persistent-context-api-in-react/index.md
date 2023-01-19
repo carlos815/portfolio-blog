@@ -65,7 +65,7 @@ export const DataProvider = ({ children }) => {
 }
 ```
 
-Y combinado con useLocalStorage queda así:
+Pero ese es aburrido. Si lo combinamos con nuestro useLocalStorage queda así:
 
 ```jsx
 export const DataProvider = ({ children }) => {
@@ -92,7 +92,8 @@ export const DataProvider = ({ children }) => {
 }
 ```
 
-Podemos utilizarlo como lo haríamos normalmente, y su estado se mantendrá a través de las recargas del navegador :O
+Mucho mejor! podemos seguir utilizándolo como lo haríamos normalmente, pero ahora su estado se mantendrá así cierres la página :O
+
  ```jsx 
 const Counter = () => {
   const { counter, setCounter } = useDataState() 

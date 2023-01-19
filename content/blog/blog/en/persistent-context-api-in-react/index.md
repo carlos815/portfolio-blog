@@ -69,7 +69,7 @@ export const DataProvider = ({ children }) => {
 }
 ```
 
-And combined with useLocalStorage it looks like this:
+But that's for suckers, we can combine it with our useLocalStorage so it looks like this:
 ```jsx
 export const DataProvider = ({ children }) => {
     //Our custom hook to save variables in the browser's memory
@@ -94,7 +94,7 @@ export const DataProvider = ({ children }) => {
 }
 ```
 
-We can consume it as we normally would, and its state will stay across browsers reloads :O
+That's more like it! We can consume it as we normally would, and its state will stay even if you close the page :O
  ```jsx 
 const Counter = () => {
   const { counter, setCounter } = useDataState() 
