@@ -392,3 +392,6 @@ ul {
 .blog-post .gatsby-highlight pre { 
         border-radius: 8px;
 }
+.blog-post .gatsby-highlight .token  {
+    background: transparent;
+}
