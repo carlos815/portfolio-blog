@@ -27,9 +27,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-
       <Section>
-        <header />
         <div className="flex flex-col gap-8 items-center mb-8 md:flex-row ga">
           <Bio className="md:w-full" />
           <img className="md:w-full" src={HeroImage} alt="vector de pc" />
