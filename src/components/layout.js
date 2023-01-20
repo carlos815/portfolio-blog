@@ -23,8 +23,9 @@ const Layout = ({ location, title, children }) => {
     )
   }
 
-  const NavLink = ({ children, to }) => <li className="w-full h-full flex justify-center "><Link className="  flex items-center justify-center uppercase md:text-sm text-xs" to={to}>
+  const NavLink = ({ children, to }) => <li className="w-full h-full flex justify-center "><Link className="  flex items-center justify-center uppercase md:text-sm text-xs w-full h-full" to={to}>
     {children}</Link></li>
+    
   return (
     <div data-is-root-path={isRootPath} className="flex flex-col items-center">
       <nav className="max-w-5xl w-full md:px-12 px-6">
