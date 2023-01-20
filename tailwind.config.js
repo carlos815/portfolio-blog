@@ -6,7 +6,7 @@
   theme: {
     extend: {
       colors: {
-        primary: "#ececec",
+        primary: "#e0e0e0",
         secondary: "#CE9178",
         background: "#1E1E1E",
         comment: "#6A9953",
