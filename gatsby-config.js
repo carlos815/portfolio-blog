@@ -6,7 +6,7 @@ module.exports = {
       summary: `I'm a front-end developer from Venezuela. This is my programming blog. `,
     },
     description: `A programming blog about programming`,
-    siteUrl: `https://cccarlos.gatsbyjs.io/`,
+    siteUrl: `https://carloshernandez.me/`,
     social: {
       twitter: `carlos_t815`,
     },
