@@ -28,7 +28,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div data-is-root-path={isRootPath} className="flex flex-col items-center">
       <nav className="max-w-5xl w-full md:px-12 px-6">
-        <ul className="flex list-none w-full h-10 divide-x border border-t-0">
+        <ul className="flex list-none w-full h-10 divide-x border border-t-0 border-primary divide-primary">
           <NavLink to={!spanish ? "/" : "/es"}>
             {!spanish ? "Home" : "Inicio"}
           </NavLink>

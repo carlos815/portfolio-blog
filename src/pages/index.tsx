@@ -5,8 +5,10 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Section from "../components/section"
-import { ReactComponent as MainImage } from "../images/svg/main.svg"
+// import { ReactComponent as MainImage } from "../images/svg/main.svg"
 import HeroImage from "../images/main.png"
+
+import mainUrl, { ReactComponent as MainImage } from '../images/svg/main.svg'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -30,7 +32,11 @@ const BlogIndex = ({ data, location }) => {
       <Section>
         <div className="flex flex-col gap-8 items-center mb-8 md:flex-row ga">
           <Bio className="md:w-full" />
-          <img className="md:w-full" src={HeroImage} alt="vector de pc" />
+          <MainImage className="md:w-full w-full "/>
+          <div >
+            {/* <img src={mainUrl} alt="star" /> */}
+          </div>
+          {/* <img className="md:w-full" src={HeroImage} alt="vector de pc" /> */}
         </div>
 
         <h2 className="text-2xl mb-3">Latest posts</h2>

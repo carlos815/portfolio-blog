@@ -1,4 +1,4 @@
-<svg width="500" height="385" viewBox="0 0 500 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 500 385" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
         d="M479.755 1.79694H17.9854C9.04553 1.79694 1.79834 9.03753 1.79834 17.9693V313.557C1.79834 322.488 9.04553 329.729 17.9854 329.729H479.755C488.695 329.729 495.942 322.488 495.942 313.557V17.9693C495.942 9.03753 488.695 1.79694 479.755 1.79694Z"
         stroke="currentColor" />
