@@ -1,7 +1,10 @@
 ---
 title: "The best way to store data in the browser with React"
 date: "2023-01-19"
-description: "How do you keep state across browser reloads?"
+description: "A mini tutorial on how to combine the Context API with LocalStorage"
+featuredimage:
+  src: "./context-meme-thumbnail.jpg"
+  alt: "Context meme"
 ---
 
 In this quick tutorial I will teach you how to make the data in the Context API persistent across reloads using the browser's built tools.

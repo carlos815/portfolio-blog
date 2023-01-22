@@ -5,9 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Section from "../components/section"
-// import { ReactComponent as MainImage } from "../images/svg/main.svg"
-
-import { ReactComponent as MainImage } from '../images/svg/main.svg'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -29,39 +27,34 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Section>
-        <div className="flex flex-col gap-8 items-center mb-8 md:flex-row ga">
-          <Bio className="md:w-full" />
-          <MainImage className="md:w-full w-full " alt="pc vector" />
-          <div >
-            {/* <img src={mainUrl} alt="star" /> */}
-          </div>
-          {/* <img className="md:w-full" src={HeroImage} alt="vector de pc" /> */}
-        </div>
-
-        <h2 className="text-2xl mb-3">Latest posts</h2>
-
-
-        <ol className="list-none divide-y divide-primary flex flex-col justify-center w-full mb-3">
+        <h2 className="text-2xl mb-3">All posts</h2>
+        <ol className="list-none divide-y divide-primary flex flex-col justify-center w-full">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
-
+            const featuredimage = getImage(post.frontmatter.featuredimage.src)
             return (
               <li key={post.fields.slug} className=" hover:bg-primary group ">
-                <Link to={post.fields.slug} itemProp="url" className=" no-underline  ">
+                <Link to={post.fields.slug} itemProp="url" className="flex no-underline  ">
                   <article
-                    className="flex justify-between w-full md:flex-row flex-col py-2 ">
-                    <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background">
-                      {title}
-                    </h3>
-                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden">{post.frontmatter.date}</p>
+                    className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 ">
+                    {
+                      featuredimage && (
+                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} />
+                      )
+                    }
+                    <div className="w-full">
+                      <h2 className="text-xl w-full  mb-0 group-hover:text-background">
+                        {title}
+                      </h2>
+                      <p className="text-base group-hover:text-background">{post.frontmatter.description}</p>
+                    </div>
+                    <p className="text-base text-secondary w-40 md:text-right  mb-0 md:block ">{post.frontmatter.date}</p>
                   </article>
                 </Link>
               </li>
             )
           })}
         </ol>
-        <Link to="/all-posts" className="font-sans w-fit">See more</Link>
-
       </Section>
     </Layout>
   )
@@ -91,9 +84,17 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMM DD, YYYY")
           title
           description
+          featuredimage {
+            src {
+              childImageSharp {
+                gatsbyImageData(width: 250, height: 185, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+              }
+            }
+            alt
+          }
         }
       }
     }

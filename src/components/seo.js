@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, lang, title, children, location }) => {
-  const { site, markdownRemark } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {

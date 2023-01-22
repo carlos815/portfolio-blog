@@ -2,6 +2,9 @@
 title: Using macros in Windows like a boss
 date: "2023-01-09T22:12:03.284Z"
 description: "With AutoHotkey making all sort of wacky macros to control your PC is actually easy"
+featuredimage:
+  src: "./hackerman2.jpeg"
+  alt: "The Hackerman"
 ---
 ![The Hackerman](./hackerman2.jpeg)
 
@@ -17,8 +20,6 @@ return
 ```
 
 _That's all for today, you are welcome, don't forget to like and subscribe._
-
-![Silly Hacker meme](./hackerman.jpg "I know what I'm doing")
 
 **[Hackerman leaves the chat]**
 

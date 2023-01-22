@@ -2,6 +2,9 @@
 title: "La mejor forma de guardar datos en el navegador con React"
 date: "2023-01-19"
 description: "Un mini tutorial de React sobre cómo combinar la API de Context y LocalStorage"
+featuredimage:
+  src: "./context-meme-es-thumbnail.jpg"
+  alt: "Context meme"
 ---
 
 En este pequeño tutorial hablaremos sobre cómo hacer que los datos de la API de Context en React persistan entre visitas utilizando las herramientas que trae el navegador.

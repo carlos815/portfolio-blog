@@ -2,6 +2,9 @@
 title: Developing an eshop without Shopify for free. An overview
 date: "2023-01-04T22:12:03.284Z"
 description: "Who doesn't like free stuff?"
+featuredimage:
+  src: "./The-Free-Candy-Van-Creepypasta.jpg"
+  alt: "Free candy van"
 ---
 
 > Hey kid, wanna' create your own fully customizable and modular eshop without

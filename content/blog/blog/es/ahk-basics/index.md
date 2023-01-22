@@ -2,6 +2,9 @@
 title: Utiliza macros en Windows como un hacker
 date: "2023-01-10T20:12:03.284Z"
 description: "Con AutoHotkey hacer todo tipo de macros raras para controlar tu PC es super fácil"
+featuredimage:
+  src: "./hackerman2.jpeg"
+  alt: "The Hackerman"
 ---
 ![The Hackerman](./hackerman2.jpeg)
 
@@ -17,8 +20,6 @@ return
 ```
 
 _Eso es todo por hoy, de nada, no olviden suscribirse y darle like._
-
-![Silly Hacker meme](./hackerman.jpg "I know what I'm doing")
 
 **[Hackerman ha dejado el chat]**
 

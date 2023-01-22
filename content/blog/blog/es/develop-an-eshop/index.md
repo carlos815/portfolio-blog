@@ -2,6 +2,9 @@
 title: ¿Cómo desarrollar una tienda online sin Shopify gratis? Una visión general
 date: "2023-01-10T19:12:03.284Z"
 description: "¿A quién no le gustan las cosas gratis?"
+featuredimage:
+  src: "./free-candy.jpg"
+  alt: "La van de los caramelos gratis"
 ---
 
 > Hey chico, ¿quieres desarrollar tu propia tienda online totalmente personalizable y modular sin
