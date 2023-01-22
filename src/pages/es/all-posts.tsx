@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
             const featuredimage = getImage(post.frontmatter.featuredimage?.src)
             return (
-              <li key={post.fields.slug} className=" hover:bg-primary group ">
+              <li key={post.fields.slug} className=" hover:bg-primary group transition-all duration-100">
                 <Link to={post.fields.slug} itemProp="url" className="flex no-underline  ">
                   <article
                     className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 ">
@@ -48,7 +48,7 @@ const BlogIndex = ({ data, location }) => {
                       </h2>
                       <p className="text-base group-hover:text-background">{post.frontmatter.description}</p>
                     </div>
-                    <p className="text-base text-secondary w-40 md:text-right  mb-0 md:block ">{post.frontmatter.date}</p>
+                    <p className="text-base text-secondary w-40 md:text-right  mb-0 md:block capitalize">{post.frontmatter.date}</p>
                   </article>
                 </Link>
               </li>
@@ -84,7 +84,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMM DD, YYYY")
+          date(formatString: "MMM DD, YYYY", locale: "es")
           title
           description
           featuredimage {

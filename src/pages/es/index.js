@@ -44,14 +44,14 @@ const BlogIndex = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
 
             return (
-              <Link to={post.fields.slug} itemProp="url" className="no-underline group hover:bg-primary">
+              <Link to={post.fields.slug} itemProp="url" className="no-underline group hover:bg-primary transition-all duration-100">
                 <li key={post.fields.slug} className="py-2">
                   <article
                     className="flex justify-between w-full md:flex-row flex-col ">
                     <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background">
                       {title}
                     </h3>
-                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden">{post.frontmatter.date}</p>
+                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden capitalize">{post.frontmatter.date}</p>
                   </article>
                 </li>
               </Link>
@@ -88,7 +88,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMMM DD, YYYY", locale: "es")
           title
           description
         }

@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
             const title = post.frontmatter.title || post.fields.slug
             const featuredimage = getImage(post.frontmatter.featuredimage.src)
             return (
-              <li key={post.fields.slug} className=" hover:bg-primary group ">
+              <li key={post.fields.slug} className=" hover:bg-primary group transition-all duration-100">
                 <Link to={post.fields.slug} itemProp="url" className="flex no-underline  ">
                   <article
                     className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 ">
