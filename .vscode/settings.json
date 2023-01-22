@@ -4,5 +4,9 @@
         "activityBar.foreground": "#fdf8fc",
         "titleBar.activeBackground": "#303030",
         "titleBar.activeForeground": "#FDF8FC"
-    }
+    },
+    "cSpell.ignoreWords": [
+        "featuredimage",
+        "frontmatter"
+    ]
 }
