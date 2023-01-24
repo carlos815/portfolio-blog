@@ -196,7 +196,7 @@ h6>a {
 /* Prose */
 
 p {
-    @apply text-2xl text-primary font-sans
+    @apply text-lg text-primary font-sans mb-4
 }
 
 ul {
