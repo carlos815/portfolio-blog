@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Section from "../components/section"
 import Comments from "../components/comments"
+import Tag from "../components/tag"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -21,8 +22,13 @@ const BlogPostTemplate = ({
           itemType="http://schema.org/Article"
         >
           <header>
-            <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
+            {post.frontmatter?.tags && <div className="flex gap-3 mb-4">{post.frontmatter.tags.map((tag) =>
+              <Tag name={tag} />
+              )}
+            </div>}
+         
+            <h1 itemProp="headline" className="mb-0">{post.frontmatter.title}</h1>
+            <p className="text-secondary font-bold">{post.frontmatter.date}</p>
           </header>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -34,8 +40,6 @@ const BlogPostTemplate = ({
         </article>
         <Comments />
       </Section>
-
-
       {/* <nav className="blog-post-nav">
         <ul
           style={{
@@ -95,7 +99,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description        
+        description
+        tags     
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

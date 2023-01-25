@@ -36,12 +36,7 @@ const Layout = ({ location, title, children }) => {
           <NavLink to={(!spanish ? "" : "/es") + "/about"}>
             {!spanish ? "About me" : "Sobre mi"}
           </NavLink>
-          <NavLink to="https://carlos815.github.io/portfolio/">
-            <div className="flex gap-2 items-center">
-              <span>{!spanish ? "Portfolio" : "Portafolio"}</span>
-              <UrlIcon />
-            </div>
-          </NavLink>
+         
           <NavLink to={!spanish ? "/es" : "/"}>
             {!spanish ? "Español 🇻🇪" : "English 🇺🇸"}
           </NavLink>

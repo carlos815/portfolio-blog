@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&display=swap');
+@import url('./utterances.css');
 
 :root {
     --maxWidth-none: "none";
@@ -224,7 +225,7 @@ ul li,
 ol li {
     /* padding-left: var(--spacing-0);
     margin-bottom: calc(var(--spacing-8) / 2); */
-    @apply font-sans
+    @apply font-sans text-lg
 }
 
 li>p {
@@ -342,17 +343,6 @@ a:focus {
     border-radius: 100%; */
 }
 
-.blog-post header {
-    @apply mb-8
-}
-
-.blog-post header h1 {
-    @apply m-0 text-4xl
-}
-
-.blog-post header p {
-    @apply text-sm font-bold text-secondary
-}
 
 .blog-post-nav ul {
     /* margin: var(--spacing-0); */

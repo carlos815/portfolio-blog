@@ -10,14 +10,17 @@ function Comments({ children }) {
         scriptElement.setAttribute("repo", "carlos815/portfolio-blog")
         scriptElement.setAttribute("issue-term", "pathname")
         scriptElement.setAttribute("label", "post-comments")
-        scriptElement.setAttribute("theme", "github-dark")
+        scriptElement.setAttribute("theme", "github-dark-orange")
         scriptElement.setAttribute("crossorigin", "anonymous")
-
+        scriptElement.setAttribute("async", "true")
         if (commentComponentRef) {
             commentComponentRef.current.appendChild(scriptElement)
         }
 
-    }, [])
+    }, [commentComponentRef])
+
+
+
     return <div ref={commentComponentRef}>{children}</div>
 }
 

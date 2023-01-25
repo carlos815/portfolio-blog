@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Section from "../components/section"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Tag from "../components/tag"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -39,16 +40,21 @@ const BlogIndex = ({ data, location }) => {
                     className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 ">
                     {
                       featuredimage && (
-                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} />
+                        <div className="mb-4">                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} className="aspect-[250/185] w-full" />
+</div>
                       )
                     }
                     <div className="w-full">
-                      <h2 className="text-xl w-full  mb-0 group-hover:text-background">
+                      <h2 className="text-xl w-full  mb-0 group-hover:text-background font-serif">
                         {title}
                       </h2>
-                      <p className="text-base group-hover:text-background">{post.frontmatter.description}</p>
+                      <p className="text-base group-hover:text-background  mb-0">{post.frontmatter.description}</p>
+                      {post.frontmatter?.tags && <div className="flex gap-3 my-2 flex-wrap">{post.frontmatter.tags.map((tag) =>
+                        <Tag name={tag} />
+                      )}</div>}
                     </div>
-                    <p className="text-base text-secondary w-40 md:text-right  mb-0 md:block ">{post.frontmatter.date}</p>
+                    <p className="text-base text-secondary w-40 md:text-right   md:block  mb-4">{post.frontmatter.date}</p>
+                 
                   </article>
                 </Link>
               </li>
@@ -95,6 +101,7 @@ export const pageQuery = graphql`
             }
             alt
           }
+          tags
         }
       }
     }

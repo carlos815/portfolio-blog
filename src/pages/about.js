@@ -26,14 +26,14 @@ const BlogIndex = ({ data, location }) => {
         <h1>Carlos Hernández? Who that?</h1>
 
         <p className="">I'm a developer from Venezuela. I'm currently based in Colombia. I'm {myAge()} years old.</p>
-
-        <p className=" text-comment">
-          //I was actually an economist, but pivoted to development during the pandemic
+        <p><a href="https://carlos815.github.io/portfolio/">Link to my portfolio</a></p>
+        <p className="">
+          I was actually an economist, but pivoted to development during the pandemic
         </p>
 
         <p>I have worked with React, Flutter and even Python for some data analysis, but I mostly gravitate towards React.</p>
         <p>I&#39;m the creator of <a href="laslucas.com">Las Lucas</a>, a completely free website that compiles the different exchange rates in Venezuela. It has over 10.000 visits each month.</p>
-        <p>The site uses multiple web scrappers to keep itself updated with the latest price on the many <em>officialish</em> exchange rates (long story) and shows it with a very simple interface. That way people don't have to scour social media sites to get updates on the price multiple times a day, which is a challenge for people that are not tech savvy and/or have slow connection.</p>
+        <p>The site uses multiple web scrappers to keep itself updated with the many <em>officialish</em> exchange rates (long story) and shows it with a very simple interface. That way people don't have to scour social media sites to get updates multiple times a day, which is a challenge for people that are not tech savvy and/or have slow connection.</p>
 
         <p>I&#39;m good at writing chronicles. As in, I-should-be-doing-that-for-a-living-instead-of-programming kind of good, with multiple publications in big sites like the NTY and the Washington Post.</p>
         <p>I learned English by playing Zelda and Star Fox in the Nintendo 64, which officially makes me a Certified Nerd™.</p>
@@ -69,9 +69,8 @@ const BlogIndex = ({ data, location }) => {
         <p>A Pomodoro timer built in React using Redux. I designed it using neumorphism.</p>
 
         <h2>Contact</h2>
-        <a href="https://www.linkedin.com/in/carlos-hern%C3%A1ndez-5a751422a/">LinkedIn</a>
-        <a href="https://twitter.com/carlos_t815" className="mb-4">Twitter</a>
-        <p className="text-base mb-4">I also use the technology of internet mail correspondence, also known as <a href="https://en.wikipedia.org/wiki/Email">electronic mail</a>, contact me at cccarlos@duck.com      </p>
+        <p> <a className="" href="https://www.linkedin.com/in/carlos-hern%C3%A1ndez-5a751422a/">LinkedIn</a> | <a href="https://twitter.com/carlos_t815" className="">Twitter</a></p>
+        <p className="">I also use the technology of internet mail correspondence, also known as <a href="https://en.wikipedia.org/wiki/Email">electronic mail</a>, contact me at cccarlos@duck.com      </p>
       </Section>
     </Layout>
   )
