@@ -5,6 +5,7 @@ description: "With AutoHotkey making all sort of wacky macros to control your PC
 featuredimage:
   src: "./hackerman2.jpeg"
   alt: "The Hackerman"
+tags: ["Windows"]
 ---
 ![The Hackerman](./hackerman2.jpeg)
 
