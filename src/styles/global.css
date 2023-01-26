@@ -241,6 +241,7 @@ li>ul {
     margin-top: calc(var(--spacing-8) / 2); */
 }
 
+
 .blog-post blockquote p {
     @apply border-l-4 border-comment italic px-4 mb-8 text-lg
 }
@@ -388,4 +389,8 @@ ul {
 }
 .blog-post .gatsby-highlight .token  {
     background: transparent;
+}
+
+.blog-post p code {
+    @apply px-2 rounded-lg
 }
