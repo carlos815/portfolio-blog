@@ -23,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
 
       <Section>
-        <h1>Carlos Hernández? Who that?</h1>
+        <h1>Who am I?</h1>
 
         <p className="">I'm a developer from Venezuela. I'm currently based in Colombia. I'm {myAge()} years old.</p>
         <p><a href="https://carlos815.github.io/portfolio/">Link to my portfolio</a></p>
@@ -33,29 +33,13 @@ const BlogIndex = ({ data, location }) => {
 
         <p>I have worked with React, Flutter and even Python for some data analysis, but I mostly gravitate towards React.</p>
         <p>I&#39;m the creator of <a href="laslucas.com">Las Lucas</a>, a completely free website that compiles the different exchange rates in Venezuela. It has over 10.000 visits each month.</p>
-        <p>The site uses multiple web scrappers to keep itself updated with the many <em>officialish</em> exchange rates (long story) and shows it with a very simple interface. That way people don't have to scour social media sites to get updates multiple times a day, which is a challenge for people that are not tech savvy and/or have slow connection.</p>
+        {/* <p>The site uses multiple web scrappers to keep itself updated with the many <em>officialish</em> exchange rates (long story) and shows it with a very simple interface. That way people don't have to scour social media sites to get updates multiple times a day, which is a challenge for people that are not tech savvy and/or have slow connection.</p> */}
 
-        <p>I&#39;m good at writing chronicles. As in, I-should-be-doing-that-for-a-living-instead-of-programming kind of good, with multiple publications in big sites like the NTY and the Washington Post.</p>
-        <p>I learned English by playing Zelda and Star Fox in the Nintendo 64, which officially makes me a Certified Nerd™.</p>
-        <p>I&#39;m very into metal music. I used to play the keyboard in <a href="https://soundcloud.com/neutrinia-banda">a power metal band</a> back in college. I kinda&#39; miss that.</p>
-        <p>I like exercising, specially running, although as a Certified Nerd™, I admit that screwing around with data sheets about my performance in Excel was half of the fun. Right now I&#39;m into CrossFit, which I&#39;m terrible at, but it&#39;s still lots of fun (what up 6 am squat?).</p>
-        <h2 id="publications">Publications</h2>
-        <p>Here are some notable publications:</p>
-        <p>“How Bitcoin Saved My Family”. February 23, 2019. New York Times. Op-ed
-          piece. Published
-          on the printed edition of the Sunday Review.</p>
-        <p>“On a Date While Venezuela Burns”. August 4, 2017. Op-ed piece. Published
-          on the printed edition of the Sunday Review.</p>
-        <p>“Binding Constraints, or why the Venezuelan Economy is Screwed”. Caracas
-          Chronicles. November 18, 2016. A review of a study by the Center for
-          International Development (CID) of Harvard Kennedy School about the
-          macroeconomic constrains for investments in Venezuela.</p>
-        <p>“How I Voted in Venezuela’s (Non) Election”. May 21, 2018. New York Times.
-          Op-ed piece.</p>
-        <p>“Middle Class and Hungry in Venezuela”. August 16, 2016. New York Times.
-          Op-ed piece.</p>
-        <p>&quot;In Venezuela, a daily struggle for the basic necessities of life”. April
-          10, 2018. Washington Post. Op-ed Piece on the Democracy Post section.</p>
+        <p>I&#39;m good at writing chronicles. As in, I-should-be-doing-that-for-a-living kind of good, with multiple publications in big sites like the NTY and the Washington Post.</p>
+        <p>I learned English by playing Zelda and Star Fox in the Nintendo 64.</p>
+        <p>Music-wise, I like metal. I used to play the keyboard in <a href="https://soundcloud.com/neutrinia-banda">a power metal band</a> back in college. I kinda&#39; miss that.</p>
+        <p>I like exercising, specially running, although I admit that screwing around with data sheets about my performance in Excel was half of the fun. Right now I&#39;m into CrossFit, which I&#39;m terrible at, but it&#39;s still lots of fun (what up 6 am squat?).</p>
+
         <h2 id="open-source-projects">Open-source Projects</h2>
         <p>For now this section is better read on <a href="https://carlos815.github.io/portfolio/">my portfolio page</a> which has some nice illustrations, and a handy graph of all of my tech stack. I&#39;m in the process of migrating all of that to this new blog, so this section will eventually be it&#39;s own page. For now, it&#39;s this very lame list.</p>
         <h5 id="full-stack-online-shop-">Full stack online shop.</h5>
@@ -68,9 +52,28 @@ const BlogIndex = ({ data, location }) => {
         <p><a href="https://tomate.netlify.app/">Demo</a> | <a href="https://github.com/carlos815/pomodoro">Source Code</a></p>
         <p>A Pomodoro timer built in React using Redux. I designed it using neumorphism.</p>
 
+        <h2 id="publications">Publications</h2>
+        <p>Here are some notable publications:</p>
+        <p><span className="font-bold">“How Bitcoin Saved My Family”</span>. February 23, 2019. New York Times. Op-ed
+          piece. Published
+          on the printed edition of the Sunday Review.</p>
+        <p><span className="font-bold">“On a Date While Venezuela Burns”</span>. August 4, 2017. Op-ed piece. Published
+          on the printed edition of the Sunday Review.</p>
+        <p><span className="font-bold">“Binding Constraints, or why the Venezuelan Economy is Screwed”</span>. Caracas
+          Chronicles. November 18, 2016. A review of a study by the Center for
+          International Development (CID) of Harvard Kennedy School about the
+          macroeconomic constrains for investments in Venezuela.</p>
+        <p><span className="font-bold">“How I Voted in Venezuela’s (Non) Election”</span>. May 21, 2018. New York Times.
+          Op-ed piece.</p>
+        <p><span className="font-bold">“Middle Class and Hungry in Venezuela”</span>. August 16, 2016. New York Times.
+          Op-ed piece.</p>
+        <p>&quot;In Venezuela, a daily struggle for the basic necessities of life”. April
+          10, 2018. Washington Post. Op-ed Piece on the Democracy Post section.</p>
+        
         <h2>Contact</h2>
-        <p> <a className="" href="https://www.linkedin.com/in/carlos-hern%C3%A1ndez-5a751422a/">LinkedIn</a> | <a href="https://twitter.com/carlos_t815" className="">Twitter</a></p>
-        <p className="">I also use the technology of internet mail correspondence, also known as <a href="https://en.wikipedia.org/wiki/Email">electronic mail</a>, contact me at cccarlos@duck.com      </p>
+        <p className="">As a guy that's always into the bleeding edge of technology, I'm a user of the internet correspondence technology, also known as <a href="https://en.wikipedia.org/wiki/Email">"electronic mail"</a>, contact me at:</p> 
+        <p>cccarlos@duck.com | <a className="" href="https://www.linkedin.com/in/carlos-hern%C3%A1ndez-5a751422a/">LinkedIn</a> | <a href="https://twitter.com/carlos_t815" className="">Twitter</a> </p>
+     
       </Section>
     </Layout>
   )
