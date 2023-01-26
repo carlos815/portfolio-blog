@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
                     {
                       featuredimage && (
                         <div className="mb-4">                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} className="aspect-[250/185] w-full" />
-</div>
+                        </div>
                       )
                     }
                     <div className="w-full">
@@ -54,7 +54,6 @@ const BlogIndex = ({ data, location }) => {
                       )}</div>}
                     </div>
                     <p className="text-base text-secondary w-40 md:text-right   md:block  mb-4">{post.frontmatter.date}</p>
-                 
                   </article>
                 </Link>
               </li>
