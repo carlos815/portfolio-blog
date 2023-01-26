@@ -1,6 +1,6 @@
 ---
 title: "Create a Pomodoro timer using the Context API"
-date: "2023-01-24"
+date: "2023-01-26"
 description: "A mini tutorial on how to combine the Context API with LocalStorage"
 featuredimage:
   src: "./cover.png"
