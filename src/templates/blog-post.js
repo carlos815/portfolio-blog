@@ -22,11 +22,11 @@ const BlogPostTemplate = ({
           itemType="http://schema.org/Article"
         >
           <header>
-            {post.frontmatter?.tags && <div className="flex gap-3 mb-4">{post.frontmatter.tags.map((tag) =>
+            {post.frontmatter?.tags && <div className="flex gap-3 mb-4 flex-wrap">{post.frontmatter.tags.map((tag) =>
               <Tag name={tag} />
-              )}
+            )}
             </div>}
-         
+
             <h1 itemProp="headline" className="mb-0">{post.frontmatter.title}</h1>
             <p className="text-secondary font-bold">{post.frontmatter.date}</p>
           </header>
