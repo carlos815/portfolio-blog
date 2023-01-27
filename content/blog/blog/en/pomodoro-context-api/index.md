@@ -5,7 +5,7 @@ description: "A mini tutorial on how to combine the Context API with LocalStorag
 featuredimage:
   src: "./cover.png"
   alt: "Pomodoro timer"
-tags: ["Project", "React", "Context API", "Next.js", "Typescript"]
+tags: ["Project", "React", "Context API", "Typescript"]
 ---
 
 The pomodoro is a time management technique where you work for 25 minutes and rest for 5 minutes. It's a neat trick to keep yourself focused on a task for a long period of time without fatiguing yourself too much.
@@ -548,13 +548,13 @@ Create this constant:
   const onScreenTime = status == Status.Play ? endTime - now : timeRemaining
 ```
 
-If the timer is running, you show `endTime - now`, else just show time remaining. They are technically the same, but remember that `now` updates every 250 ms.
+Translation: When the timer is running, you show `endTime - now`, which updates every 250 ms. When the timer is not running, show `timeRemaining`, which updates whenever we call `setTimeRemaining`
 
 This time is expressed in milliseconds. You could just throw onScreenTime in the interface and be done with it, but we ain't cavemen.
 
 ![Timer in milliseconds](./nimation.gif)
 
-We will express that hot mess in seconds and minutes.These functions will help:
+We will convert that hot mess into seconds and minutes. These functions will help:
 
 ```tsx
 const minDigits = (numStr: String, digits: Number) => {
@@ -587,7 +587,7 @@ You can now show the name of the current timer dynamically.
 <h2>{timer.name}</h2>
 ```
 
-And put the playPause, reset, and skip functions in the buttons in their respective buttons.
+And put the playPause, reset, and skip functions in their respective buttons.
 
 ```tsx
 ...
@@ -671,7 +671,7 @@ Then you can send them once the timer has ended with `displayNotification`.
 ```tsx
 // lib/timer.tsx
 const ended = () => {
-      displayNotification(`${timer.name} ended.`, { body: "You are doing great!" })
+      displayNotification(`${timer.name} ended.`, { body: "You are doing great!" }) //here
       setStatus(Status.Ended)
       setTimeRemaining(0)
   }
