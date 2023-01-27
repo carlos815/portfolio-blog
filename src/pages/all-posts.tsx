@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }) => {
                     className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 ">
                     {
                       featuredimage && (
-                        <div className="mb-4">                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} className="aspect-[250/185] w-full" />
+                        <div className="mb-4 md:mb-0 bg- flex items-center h-full">                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} className="aspect-[250/185] w-full" />
                         </div>
                       )
                     }
