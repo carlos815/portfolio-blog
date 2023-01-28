@@ -6,6 +6,7 @@ featuredimage:
   src: "./cover.png"
   alt: "Pomodoro timer"
 tags: ["Project", "React", "Context API", "Typescript"]
+language: "en"
 ---
 
 The pomodoro is a time management technique where you work for 25 minutes and rest for 5 minutes. It's a neat trick to keep yourself focused on a task for a long period of time without fatiguing yourself too much.

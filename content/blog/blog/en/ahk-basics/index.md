@@ -6,6 +6,7 @@ featuredimage:
   src: "./hackerman2.jpeg"
   alt: "The Hackerman"
 tags: ["Windows"]
+language: "en"
 ---
 ![The Hackerman](./hackerman2.jpeg)
 

@@ -5,6 +5,7 @@ description: "Who doesn't like free stuff?"
 featuredimage:
   src: "./The-Free-Candy-Van-Creepypasta.jpg"
   alt: "Free candy van"
+language: "en"
 ---
 
 > Hey kid, wanna' create your own fully customizable and modular eshop without

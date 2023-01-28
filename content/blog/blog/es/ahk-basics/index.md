@@ -5,6 +5,8 @@ description: "Con AutoHotkey hacer todo tipo de macros raras para controlar tu P
 featuredimage:
   src: "./hackerman2.jpeg"
   alt: "The Hackerman"
+language: "es"
+tags: ["Windows"]
 ---
 ![The Hackerman](./hackerman2.jpeg)
 

@@ -5,6 +5,7 @@ description: "¿A quién no le gustan las cosas gratis?"
 featuredimage:
   src: "./free-candy.jpg"
   alt: "La van de los caramelos gratis"
+language: "es"
 ---
 
 > Hey chico, ¿quieres desarrollar tu propia tienda online totalmente personalizable y modular sin
