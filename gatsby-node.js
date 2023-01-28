@@ -55,7 +55,104 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  //---------
+
+  //Tag pages
+
+  const tagPage = path.resolve(`./src/templates/tag.js`)
+
+  // Get all markdown blog posts sorted by date
+  const resultTag = await graphql(
+    `{
+          allMarkdownRemark {
+            group(field: frontmatter___tags) {
+              fieldValue
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    language
+                  }
+                }
+              }
+            }
+          }
+      }`
+  )
+
+  if (resultTag.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your tag pages`,
+      resultTag.errors
+    )
+    return
+  }
+
+  const tags = resultTag.data.allMarkdownRemark.group
+  // Create tag pages
+  const allPostsPage = path.resolve(`./src/templates/all-posts.js`)
+
+  if (tags.length > 0) {
+    tags.forEach((tag, index) => {
+      const id = tag.fieldValue
+      tag.edges.map(edge => {
+        const language = edge.node.frontmatter.language
+        createPage({
+          path: `/${language}/tags/${id}`,
+          component: allPostsPage,
+          context: {
+            id,
+            language
+          },
+        })
+      })
+    })
+  }
+  //---------
+
+
+  const allLanguagesQuery = await graphql(
+    `{
+        allMarkdownRemark {
+          group(field: frontmatter___language) {
+            fieldValue
+          }
+        }
+    }`
+  )
+
+  if (allLanguagesQuery.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your languages`,
+      allLanguagesQuery.errors
+    )
+    return
+  }
+
+  const languages = allLanguagesQuery.data.allMarkdownRemark.group.map((group) => group.fieldValue)
+
+  if (languages.length > 0) {
+    languages.forEach((language, index) => {
+      //Create all-posts pages
+      createPage({
+        path: `/${language}/all-posts`,
+        component: allPostsPage,
+        context: {
+          language
+        },
+      })
+
+
+    })
+  }
 }
+
+
+
+
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
