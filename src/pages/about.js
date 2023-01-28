@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
         </p>
 
         <p>I have worked with React, Flutter and even Python for some data analysis, but I mostly gravitate towards React.</p>
-        <p>I&#39;m the creator of <a href="laslucas.com">Las Lucas</a>, a completely free website that compiles the different exchange rates in Venezuela. It has over 10.000 visits each month.</p>
+        <p>I&#39;m the creator of <a href="https://laslucas.com">Las Lucas</a>, a completely free website that compiles the different exchange rates in Venezuela. It has over 10.000 visits each month.</p>
         {/* <p>The site uses multiple web scrappers to keep itself updated with the many <em>officialish</em> exchange rates (long story) and shows it with a very simple interface. That way people don't have to scour social media sites to get updates multiple times a day, which is a challenge for people that are not tech savvy and/or have slow connection.</p> */}
 
         <p>I&#39;m good at writing chronicles. As in, I-should-be-doing-that-for-a-living kind of good, with multiple publications in big sites like the NTY and the Washington Post.</p>

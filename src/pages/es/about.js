@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
         </p>
 
         <p>He trabajado con React, Flutter e incluso Python para algo de análisis de datos, pero principalmente me inclino por React.</p>
-        <p>Soy el creador de <a href="https://laslucas.com/m">Las Lucas</a>, un sitio web completamente gratuito que recopila los diferentes tipos de cambio en Venezuela. Tiene más de 10.000 visitas al mes.</p>
+        <p>Soy el creador de <a href="https://laslucas.com">Las Lucas</a>, un sitio web completamente gratuito que recopila los diferentes tipos de cambio en Venezuela. Tiene más de 10.000 visitas al mes.</p>
         <p>Se me da bien escribir crónicas. Nivel &quot;debería vivir de eso&quot;, con múltiples publicaciones en grandes sitios como NTY y el Washington Post.</p>
         <p>Aprendí inglés jugando a Zelda y Star Fox en el Nintendo 64.</p>
         <p>Me gusta el metal. Era el tecladista de <a href="https://soundcloud.com/neutrinia-banda">una banda de power metal</a> en la universidad.</p>
