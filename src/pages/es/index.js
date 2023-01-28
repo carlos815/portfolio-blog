@@ -5,7 +5,7 @@ import Bio from "../../components/bio"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Section from "../../components/section"
-import HeroImage from "../../images/main.png"
+import { ReactComponent as MainImage } from '../../images/svg/main.svg'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -26,39 +26,35 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-
       <Section>
-
-        <header>
-
-        </header>
         <div className="flex flex-col gap-8 items-center mb-8 md:flex-row ga">
           <Bio className="md:w-full" lang="es" />
-          <img className="md:w-full" src={HeroImage} alt="Pc vector" />
+          <MainImage className="md:w-full w-full " alt="pc vector" />
+          <div >
+            {/* <img src={mainUrl} alt="star" /> */}
+          </div>
+          {/* <img className="md:w-full" src={HeroImage} alt="vector de pc" /> */}
         </div>
-
-        <h2 className="text-2xl mb-3">Últimos posts</h2>
-
-        <ol className="list-none divide-y divide-primary flex flex-col justify-center w-full">
+        <h2 className="text-2xl mb-3">Latest posts</h2>
+        <ol className="list-none divide-y divide-primary flex flex-col justify-center w-full mb-3">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
-
             return (
-              <Link to={post.fields.slug} itemProp="url" className="no-underline group hover:bg-primary transition-all duration-100">
-                <li key={post.fields.slug} className="py-2">
+              <li key={post.fields.slug} className=" hover:bg-primary group transition-all duration-100">
+                <Link to={post.fields.slug} itemProp="url" className=" no-underline  ">
                   <article
-                    className="flex justify-between w-full md:flex-row flex-col ">
-                    <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background">
+                    className="flex justify-between w-full md:flex-row flex-col py-2 ">
+                    <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background ">
                       {title}
                     </h3>
-                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden capitalize">{post.frontmatter.date}</p>
+                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden">{post.frontmatter.date}</p>
                   </article>
-                </li>
-              </Link>
+                </Link>
+              </li>
             )
           })}
         </ol>
-        <Link to="all-posts" className="font-sans w-fit">Ver más</Link>
+        <Link to="/es/all-posts" className="font-sans w-fit">See more</Link>
       </Section>
     </Layout>
   )

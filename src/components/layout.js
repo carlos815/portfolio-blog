@@ -36,7 +36,7 @@ const Layout = ({ location, title, children }) => {
           <NavLink to={(!spanish ? "" : "/es") + "/about"}>
             {!spanish ? "About me" : "Sobre mi"}
           </NavLink>
-         
+
           <NavLink to={!spanish ? "/es" : "/"}>
             {!spanish ? "Español 🇻🇪" : "English 🇺🇸"}
           </NavLink>

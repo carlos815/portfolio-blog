@@ -23,7 +23,7 @@ const BlogPostTemplate = ({
         >
           <header>
             {post.frontmatter?.tags && <div className="flex gap-3 mb-4 flex-wrap">{post.frontmatter.tags.map((tag) =>
-              <Tag name={tag} />
+              <Tag name={tag} lang={post.frontmatter.language} key={tag} />
             )}
             </div>}
 
@@ -100,7 +100,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        tags     
+        tags
+        language  
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
