@@ -46,26 +46,25 @@ const BlogIndex = ({ data: { site, tags, allMarkdownRemark: posts }, location, p
             const featuredimage = getImage(post.frontmatter.featuredimage.src)
             return (
               <li key={post.fields.slug} className=" hover:bg-primary group transition-all duration-100">
-                <Link to={post.fields.slug} itemProp="url" className="flex no-underline  ">
-                  <article
-                    className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 ">
-                    {
-                      featuredimage && (
-                        <div className="mb-4 md:mb-0 bg- flex items-center h-full">                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} className="aspect-[250/185] w-full" />
-                        </div>
-                      )
-                    }
-                    <div className="w-full">
-                      <h2 className="text-xl w-full  mb-0 group-hover:text-background font-serif">
-                        {title}
-                      </h2>
-                      <p className="text-base group-hover:text-background  mb-0">{post.frontmatter.description}</p>
-                      {true && post.frontmatter?.tags && <div className="flex gap-3 my-2 flex-wrap">{post.frontmatter.tags.map((tag) =>
-                        <Tag name={tag} lang={post.frontmatter.language} key={tag} />
-                      )}</div>}
-                    </div>
-                    <p className="text-base text-secondary w-40 md:text-right   md:block  mb-4">{post.frontmatter.date}</p>
-                  </article>
+                <Link to={post.fields.slug} className="flex justify-between w-full md:flex-row flex-col p-2  gap-x-6 no-underline  ">
+
+                  {
+                    featuredimage && (
+                      <div className="mb-4 md:mb-0 bg- flex items-center h-full">                        <GatsbyImage image={featuredimage} alt={post.frontmatter.featuredimage.alt} className="aspect-[250/185] w-full" />
+                      </div>
+                    )
+                  }
+                  <div className="w-full">
+                    <h2 className="text-xl w-full  mb-0 group-hover:text-background font-serif">
+                      {title}
+                    </h2>
+                    <p className="text-base group-hover:text-background  mb-0">{post.frontmatter.description}</p>
+                    {true && post.frontmatter?.tags && <div className="flex gap-3 my-2 flex-wrap">{post.frontmatter.tags.map((tag) =>
+                      <Tag name={tag} lang={post.frontmatter.language} key={tag} />
+                    )}</div>}
+                  </div>
+                  <p className="text-base text-secondary w-40 md:text-right   md:block  mb-4">{post.frontmatter.date}</p>
+
                 </Link>
               </li>
             )
