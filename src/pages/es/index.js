@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
           </div>
           {/* <img className="md:w-full" src={HeroImage} alt="vector de pc" /> */}
         </div>
-        <h2 className="text-2xl mb-3">Latest posts</h2>
+        <h2 className="text-2xl mb-3">Últimos posts</h2>
         <ol className="list-none divide-y divide-primary flex flex-col justify-center w-full mb-3">
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -54,7 +54,7 @@ const BlogIndex = ({ data, location }) => {
             )
           })}
         </ol>
-        <Link to="/es/all-posts" className="font-sans w-fit">See more</Link>
+        <Link to="/es/all-posts" className="font-sans w-fit">Ver todos los posts</Link>
       </Section>
     </Layout>
   )

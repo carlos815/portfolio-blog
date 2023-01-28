@@ -34,8 +34,16 @@ const BlogIndex = ({ data: { site, tags, allMarkdownRemark: posts }, location, p
         return "All posts"
     }
   }
-  console.log(id)
 
+  const tagsTitle = () => {
+    if (id) return `${id} (${totalCount})`
+    switch (language) {
+      case "es":
+        return "Todas las etiquetas"
+      case "en":
+        return "All tags"
+    }
+  }
   return (
     <Layout location={location} title={siteTitle}>
       <Section>
@@ -75,7 +83,7 @@ const BlogIndex = ({ data: { site, tags, allMarkdownRemark: posts }, location, p
 
       </Section>
       <Section>
-        <h1 className="text-2xl mb-3">All Tags</h1>
+        <h1 className="text-2xl mb-3">{tagsTitle()}</h1>
         <ul className="list-none flex wrap gap-4">
           {tags.group.map(tag =>
             <Tag name={tag.fieldValue} count={tag.totalCount} lang={language} key={tag.fieldValue} active={id === tag.fieldValue} />

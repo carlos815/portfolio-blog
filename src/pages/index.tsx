@@ -60,7 +60,7 @@ const BlogIndex = ({ data, location }) => {
             )
           })}
         </ol>
-        <Link to="/en/all-posts" className="font-sans w-fit">See more</Link>
+        <Link to="/en/all-posts" className="font-sans w-fit">See all posts</Link>
 
       </Section>
     </Layout>
