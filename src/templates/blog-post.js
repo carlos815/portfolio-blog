@@ -10,7 +10,9 @@ import Tag from "../components/tag"
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
+
 }) => {
+
   const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
@@ -28,7 +30,7 @@ const BlogPostTemplate = ({
             </div>}
 
             <h1 itemProp="headline" className="mb-0">{post.frontmatter.title}</h1>
-            <p className="text-secondary font-bold">{post.frontmatter.date}</p>
+            <p className="text-secondary font-bold capitalize">{post.frontmatter.date}</p>
           </header>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -86,6 +88,7 @@ export const pageQuery = graphql`
     $id: String!
     $previousPostId: String
     $nextPostId: String
+    $language: String
   ) {
     site {
       siteMetadata {
@@ -98,7 +101,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD, YYYY", locale: $language)
         description
         tags
         language  

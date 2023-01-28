@@ -47,7 +47,7 @@ const BlogIndex = ({ data, location }) => {
                     <h3 className="text-base w-full md:max-w-[66%] mb-0 group-hover:text-background ">
                       {title}
                     </h3>
-                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden">{post.frontmatter.date}</p>
+                    <p className="text-base text-secondary max-w-[33%] w-full text-right mb-0 md:block hidden capitalize">{post.frontmatter.date}</p>
                   </article>
                 </Link>
               </li>

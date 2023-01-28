@@ -71,7 +71,7 @@ const BlogIndex = ({ data: { site, tags, allMarkdownRemark: posts }, location, p
                       <Tag name={tag} lang={post.frontmatter.language} key={tag} />
                     )}</div>}
                   </div>
-                  <p className="text-base text-secondary w-40 md:text-right   md:block  mb-4">{post.frontmatter.date}</p>
+                  <p className="text-base text-secondary w-40 md:text-right   md:block  mb-4 capitalize">{post.frontmatter.date}</p>
 
                 </Link>
               </li>
@@ -84,7 +84,7 @@ const BlogIndex = ({ data: { site, tags, allMarkdownRemark: posts }, location, p
       </Section>
       <Section>
         <h1 className="text-2xl mb-3">{tagsTitle()}</h1>
-        <ul className="list-none flex wrap gap-4">
+        <ul className="list-none flex flex-wrap gap-4">
           {tags.group.map(tag =>
             <Tag name={tag.fieldValue} count={tag.totalCount} lang={language} key={tag.fieldValue} active={id === tag.fieldValue} />
           )}
@@ -121,7 +121,7 @@ export const allPostsQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMM DD, YYYY")
+          date(formatString: "MMM DD, YYYY", locale: $language)
           title
           description
           featuredimage {
