@@ -67,13 +67,13 @@ const BlogIndex = ({ data, location }) => {
           Op-ed piece.</p>
         <p><span className="font-bold">“Middle Class and Hungry in Venezuela”</span>. August 16, 2016. New York Times.
           Op-ed piece.</p>
-        <p>&quot;In Venezuela, a daily struggle for the basic necessities of life”. April
+        <p><span className="font-bold">“In Venezuela, a daily struggle for the basic necessities of life”</span>. April
           10, 2018. Washington Post. Op-ed Piece on the Democracy Post section.</p>
-        
+
         <h2>Contact</h2>
-        <p className="">As a guy that's always into the bleeding edge of technology, I'm a user of the internet correspondence technology, also known as <a href="https://en.wikipedia.org/wiki/Email">"electronic mail"</a>, contact me at:</p> 
+        <p className="">As a guy that's always into the bleeding edge of technology, I'm a user of the internet correspondence technology, also known as <a href="https://en.wikipedia.org/wiki/Email">"electronic mail"</a>, contact me at:</p>
         <p>cccarlos@duck.com | <a className="" href="https://www.linkedin.com/in/carlos-hern%C3%A1ndez-5a751422a/">LinkedIn</a> | <a href="https://twitter.com/carlos_t815" className="">Twitter</a> </p>
-     
+
       </Section>
     </Layout>
   )
