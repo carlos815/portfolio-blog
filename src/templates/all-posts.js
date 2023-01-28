@@ -76,7 +76,7 @@ const BlogIndex = ({ data: { site, tags, allMarkdownRemark: posts }, location, p
 
       </Section>
       <Section>
-        <h1>All Tags</h1>
+        <h1 className="text-2xl mb-3">All Tags</h1>
         <ul className="list-none flex wrap gap-4">
           {tags.group.map(tag =>
             <Tag name={tag.fieldValue} count={tag.totalCount} lang={language} key={tag.fieldValue} active={id === tag.fieldValue} />
