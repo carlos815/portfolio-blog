@@ -5,8 +5,8 @@ description: "Utilizaremos React para crear una herramienta útil"
 featuredimage:
   src: "./cover.png"
   alt: "Temporizador de Pomodoro"
-tags: ["Proyecto", "React", "Context API", "Typescript"]
-language: "en"
+tags: ["Proyecto", "React", "Typescript"]
+language: "es"
 ---
 
 El pomodoro es una técnica de gestión del tiempo que consiste en trabajar durante 25 minutos y descansar 5 minutos. Es un buen truco para trabajar en tareas largas de forma sostenible sin cansarse tanto.

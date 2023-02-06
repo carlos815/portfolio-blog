@@ -5,7 +5,7 @@ description: "A full project from the beginning to end"
 featuredimage:
   src: "./cover.png"
   alt: "Pomodoro timer"
-tags: ["Project", "React", "Context API", "Typescript"]
+tags: ["Project", "React", "Typescript"]
 language: "en"
 ---
 

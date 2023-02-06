@@ -6,6 +6,7 @@ featuredimage:
   src: "./The-Free-Candy-Van-Creepypasta.jpg"
   alt: "Free candy van"
 language: "en"
+tags: ["React", "KeystoneJS"]
 ---
 
 > Hey kid, wanna' create your own fully customizable and modular eshop without

@@ -6,7 +6,7 @@ featuredimage:
   src: "./context-meme-thumbnail.jpg"
   alt: "Context meme"
 language: "en"
-tags: ["React", "Context API"]
+tags: ["React"]
 ---
 
 In this quick tutorial I will teach you how to make the data in the Context API persistent across reloads using the browser's built tools.

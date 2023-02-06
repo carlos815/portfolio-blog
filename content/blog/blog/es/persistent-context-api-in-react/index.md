@@ -6,6 +6,7 @@ featuredimage:
   src: "./context-meme-es-thumbnail.jpg"
   alt: "Context meme"
 language: "es"
+tags: ["React"]
 ---
 
 En este pequeño tutorial hablaremos sobre cómo hacer que los datos de la API de Context en React persistan entre visitas utilizando las herramientas que trae el navegador.
