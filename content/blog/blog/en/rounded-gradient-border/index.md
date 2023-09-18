@@ -69,7 +69,7 @@ In my little meeting of dishonor and shame with the design crew, I used Codepen'
 
 ![Button from codepen. Black background and rounded borders with gradient](./codepen.png)
 
-But I couldn't let it go, every time I say the button, it was a reminder of the failure. There HAD to be a way. A month later, I went back to the rabbit hole, and I was set on solving the problem for good.
+But I couldn't let it go, every time I saw the button, it was a reminder of the failure. There HAD to be a way. A month later, I went back to the rabbit hole, and I was set on solving the problem for good.
 
 ## First lead, Figma 🕵️‍♀️
 
