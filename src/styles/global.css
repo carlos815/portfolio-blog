@@ -35,7 +35,7 @@
     --fontFamily-sans: monospace, Consolas, system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --fontFamily-serif:  "Merriweather", "Georgia", Cambria, "Times New Roman",
+    --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
         Times, serif;
     --font-body: var(--fontFamily-serif);
     --font-heading: var(--fontFamily-sans);
@@ -90,14 +90,15 @@ body::before {
     z-index: 10;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
-    animation: 2s linear 1s 1  fade-out forwards;
+    animation: 2s linear 1s 1 fade-out forwards;
     animation-iteration-count: 1
-} 
+}
 
 @keyframes fade-out {
     0% {
-      opacity: 0.7;  
+        opacity: 0.7;
     }
+
     100% {
         opacity: 0;
     }
@@ -131,6 +132,7 @@ hr {
     background: var(--color-accent);
     height: 1px;
     border: 0;
+    margin-bottom: 16px;
 }
 
 /* Heading */
@@ -354,7 +356,7 @@ a:focus {
 }
 
 .blog-post p img {
-    @apply text-base mb-4 flex mx-auto 
+    @apply text-base mb-4 flex mx-auto
 }
 
 .gatsby-highlight {
@@ -381,16 +383,45 @@ ul {
 
 .blog-post .gatsby-highlight {
     margin: 1.5rem 0;
- 
-  
+
+
 }
-.blog-post .gatsby-highlight pre { 
-        border-radius: 8px;
+
+.blog-post .gatsby-highlight pre {
+    border-radius: 8px;
 }
-.blog-post .gatsby-highlight .token  {
+
+.blog-post .gatsby-highlight .token {
     background: transparent;
 }
 
 .blog-post p code {
     @apply px-2 rounded-lg
+}
+
+.button {
+    display: flex;
+    color: white;
+    position: relative;
+    z-index: 0;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.button::before {
+    border-radius: 8px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 1px;
+    background: linear-gradient(to top right, #ADFF00, #0066FF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }

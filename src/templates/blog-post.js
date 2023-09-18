@@ -28,7 +28,6 @@ const BlogPostTemplate = ({
               <Tag name={tag} lang={post.frontmatter.language} key={tag} />
             )}
             </div>}
-
             <h1 itemProp="headline" className="mb-0">{post.frontmatter.title}</h1>
             <p className="text-secondary font-bold capitalize">{post.frontmatter.date}</p>
           </header>
