@@ -110,7 +110,7 @@ So maybe, if I divide the button in nine parts, and then find the exact color on
 ![Desperate](./desperate.png
 )
 
-I got dangerously to going through with that plan, but it had too many drawbacks. First of all, changing colors, border radiuses or even the widths, would have required me to redo all of the SGVs. Secondly, if anyone looked at my code, they would have found out that I'm a mad man.
+I got dangerously close to going through with that plan, but it had too many drawbacks. First of all, changing colors, border radiuses or even the widths, would have required me to redo all of the SGVs. Secondly, if anyone looked at my code, they would have found out that I'm a mad man.
 
 ## Then I saw the light
 
