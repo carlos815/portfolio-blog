@@ -84,7 +84,7 @@ Figma has it's own 2D rendering engine in [Web Assembly](https://www.figma.com/b
 
 ## Second lead, the border-image property.
 
-The page CSS-tricks as [a whole article on gradient border properties](https://css-tricks.com/gradient-borders-in-css/), problem is, the article is from 2018.
+The page CSS-tricks has [a whole article on gradient border properties](https://css-tricks.com/gradient-borders-in-css/), problem is, the article is from 2018.
 
 They talk about the `border-image` property from CSS. They have a [demo](https://codepen.io/chriscoyier/pen/ZVYXRx) where they show the gradient borders with the transparent background, but the borders aren't rounded.
 
@@ -96,7 +96,7 @@ They say that the property is not compatible with `border-radius`, but that was 
 
 ## The 9-silce scaling
 
-The CSS tricks article above let me into another rabbit hole.
+The CSS-tricks article above let me into another rabbit hole.
 
 The [9-slice scaling](https://en.wikipedia.org/wiki/9-slice_scaling) is a technique for resizing 2D images by dividing the image in 9 parts. I think this is what the old Pokemon games used for their borders in the dialog boxes (don't quote me on that).
 
