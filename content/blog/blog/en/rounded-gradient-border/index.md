@@ -49,7 +49,7 @@ Recently at work I was tasked with a seemingly simple task: Make a button with a
 
 ![Button from hell](./button-fire.png)
 
-Simple enough! CSS doesn't really support gradients in it's border property, but this is nothing some classic front-end jankyness can't solve:
+Simple enough! CSS doesn't really support gradients in its border property, but this is nothing some classic front-end jankyness can't solve:
 
 You just have to have use a ``::before`` element that has the gradient and then cover most of it with the background of the button so just the border shows.
 
@@ -69,18 +69,17 @@ In my little meeting of dishonor and shame with the design crew, I used Codepen'
 
 ![Button from codepen. Black background and rounded borders with gradient](./codepen.png)
 
-But I couldn't let it go, every time I say the button, it was a reminder of the failure, there HAD to be a way. A month later, I went back to the rabbit hole, and I was set on solving the problem for good.
+But I couldn't let it go, every time I say the button, it was a reminder of the failure. There HAD to be a way. A month later, I went back to the rabbit hole, and I was set on solving the problem for good.
 
 ## First lead, Figma 🕵️‍♀️
 
-So my first approach was to use the browser's inspect tool to find out what the hell is Figma doing under the hood, they can do rounded border gradients like it's nothing, and they do it all in a browser.
+So my first approach was to use the browser's inspect tool to find out what the hell Figma is doing under the hood, they can do rounded border gradients like it's nothing, and they do it all in a browser.
 
 ![Figma inspect tool](./figma.png)
 
 I didn't find anything 🙁. Everything in Figma is inside of a `<canvas>`.
 
 Figma has it's own 2D rendering engine in [Web Assembly](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/), so they aren't really using divs and javascript like the rest of the mortals.
-
 
 
 ## Second lead, the border-image property.
@@ -105,8 +104,6 @@ The [9-slice scaling](https://en.wikipedia.org/wiki/9-slice_scaling) is a techni
 )
 
 This is something [CSS actually supports](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice) with the `border-image-slice` property. As far a I can tell it has been used exclusively for making tacky borders that look like they came straight out of 1995.
-
-
 
 So maybe, if I divide the button in nine parts, and then find the exact color on each of the cutoff points, I can make a separate SGV for each section. Then I can put them together using `border-image-slice`. That way it'll scale and everything. It'll be perfect!.
 
