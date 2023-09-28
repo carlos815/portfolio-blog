@@ -6,7 +6,7 @@ featuredimage:
   src: "./desperate.png"
   alt: "Conspiracy theory mad man"
 tags: ["CSS"]
-language: "en"
+language: "es"
 ---
 
 _Si no te interesa mi habladera y sólo vienes por el código, aquí lo tienes en todo su esplendor_:
