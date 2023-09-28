@@ -109,7 +109,7 @@ Así que tal vez, si divido el botón en nueve partes, y luego encuentro el colo
 ![Desperate](./desperate.png
 )
 
-Estuve peligrosamente cerca de ejecutar plan, pero tenía demasiadas desventajas. Para empezar, cambiar los colores, los radios de los bordes o incluso el ancho, me habría obligado a rehacer todos los SGV. Además, si alguien hubiera mirado mi código, se hubiese dado cuenta que yo lo que estoy es loco.
+Estuve peligrosamente cerca de ejecutar ese plan, pero tenía demasiadas desventajas. Para empezar, cambiar los colores, los radios de los bordes o incluso el ancho, me habría obligado a rehacer todos los SGV. Además, si alguien hubiese leido mi código, se hubiese dado cuenta que yo lo que estoy es loco.
 
 ## Entonces vi la luz
 
@@ -133,7 +133,7 @@ Puedes usar un pseudoelemento `::before` con el gradiente, igual que mi plan ini
 
 Ya. Eso es todo. Es demasiado sencillo una vez tienes la respuesta.
 
-Después de que finalmente lo hice, presenté mi trabajo a la gente del equipo de diseño con orgullo, como si acabara de resolver el calentamiento global, y no se veían muy impresionados. 
+Después de que finalmente lo hice, presenté el resultado a la gente del equipo de diseño con orgullo, como si acabara de resolver el calentamiento global, y no se veían muy impresionados. 
 
 > Meh. El equipo de diseño - 2023
 
