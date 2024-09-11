@@ -1,7 +1,7 @@
 ---
-title: Learning to love Angular
+title: Learning to love Angular's DX as a React developer
 date: "2024-09-11T22:12:03.284Z"
-description: "I'm trying I swear"
+description: "I'm really trying"
 featuredimage:
   src: "./cover.jpg"
   alt: "Hide the pain harold with I love Angular trucker hat"
@@ -167,4 +167,4 @@ And for that reason only, I will choose a different framework over Angular every
 
 At the end of the day, I have learned to use Angular to the best of my abilities, but until they fix the HMR, I’ll be a React STAN.
 
-If you disagree with me, pls leave a comment. I’ve integrated a cool comment solution to my blog using Github, but no one has used it yet. 🤣
+If you agree or disagree with me, pls leave a comment. I’ve integrated a cool comment solution to my blog using GitHub issues, but no one has used it yet. I just want to know if it works.
