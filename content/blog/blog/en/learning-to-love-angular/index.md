@@ -3,8 +3,8 @@ title: Learning to love Angular
 date: "2024-09-11T22:12:03.284Z"
 description: "I'm trying I swear"
 featuredimage:
-src: "./cover.jpg"
-alt: "Hide the pain harold with I love Angular trucker hat"
+  src: "./cover.jpg"
+  alt: "Hide the pain harold with I love Angular trucker hat"
 tags: ["Angular", "React"]
 language: "en"
 ---
