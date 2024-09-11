@@ -131,7 +131,8 @@ and then use it.
 In Angular I can’t do that. I have to use the CLI which creates FOUR new files, including a testing file, then the new component gets registered in the components file whatever, and then I have to restart the local server for it to show.
 
 It’s very easy to end up with a lot of components that you don’t think deserve their own file, their own folder and their own name. Sometimes, to avoid that, I prefer just copying and pasting my code and not bother with the component at all. Later, if I need to change something, I can just search and replace. Not exactly DRY, but it’s faster and it’s less clutter in the components folder anyway.
-IDE support is weird
+
+## IDE support is weird
 
 It’s technically possible to have a full component in a single file. You can add the layout, the logic, and the styles all in one place, but the IDE doesn’t like that. The html portion of the file won't get autocomplete suggestions if it’s not in its own file.
 
